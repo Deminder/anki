@@ -83,6 +83,7 @@ rust_library(
             "rustls",
             "rustls-tls",
             "rustls-tls-webpki-roots",
+            "rustls-tls-native-roots",
             "tokio-rustls",
             "webpki-roots",
         ],
@@ -158,6 +159,7 @@ rust_library(
         ): [
             "@raze__hyper_rustls__0_21_0//:hyper_rustls",
             "@raze__rustls__0_18_1//:rustls",
+            "@raze__rustls_native_certs__0_5_0//:rustls_native_certs",
             "@raze__tokio_rustls__0_14_1//:tokio_rustls",
             "@raze__webpki_roots__0_20_0//:webpki_roots",
         ],
